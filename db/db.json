@@ -1,6 +1,13 @@
-[
+{
+  "noteBank": [
     {
-        "title":"Test Title",
-        "text":"Test text"
+      "title": "Test Title",
+      "text": "Test text"
+    },
+    {
+      "title": "efsds",
+      "text": "efsef",
+      "id": "1"
     }
-]
+  ]
+}

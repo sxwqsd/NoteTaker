@@ -1,13 +1,13 @@
-const express = require ('express'); 
+const express = require('express'); 
 const fs  = require('fs');
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 const app = express();
-const apiPath = require('')
-const htmlPath = require('')
+const apiPath = require('./Paths/apiPath')
+ const htmlPath = require('./Paths/htmlPath')
 
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-app.use(express.static('./Develop/public'));
+ app.use(express.urlencoded({ extended: true }));
+ app.use(express.json());
+app.use(express.static('public'));
 app.use('/api', apiPath);
 app.use('/', htmlPath);
 
